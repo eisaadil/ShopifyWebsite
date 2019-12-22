@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link rel="stylesheet" type="text/css" href ="Design/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href ="Design/Stylesheet.css" />
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1990 12:00:00 GMT" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <nav class="navbar navbar-expand-md fixed-top">
+      <asp:LinkButton ID="LogoLink" runat="server" CssClass="navbar-brand mx-auto" PostBackUrl="~/Home.aspx" ValidationGroup="5">Shopify</asp:LinkButton>
+      <asp:ContentPlaceHolder id="navbar" runat="server">
+        
+      </asp:ContentPlaceHolder>
+    </nav>
+    <div class="sitemap"  style="margin-bottom:20px">
+        <div class="container" style="display:table; height:inherit;">
+            <asp:SiteMapPath ID="SiteMapPath1" runat="server" CssClass="text-muted sitemap-span"></asp:SiteMapPath>
+      </div>
+    </div>
+
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    <footer class="footer" style="margin-top:20px">
+      <div class="container">
+        <span class="text-muted">Copyright 2018. A project by Eisa Adil, Jenny James, Mirza Mohammad. MAHE Dubai.</span>
+      </div>
+    </footer>
+    <script src ="Design/jquery.js"></script>
+    <script src ="Design/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <asp:ContentPlaceHolder id="PutScriptHere" runat="server"></asp:ContentPlaceHolder>
+</body>
+</html>
