@@ -1,5 +1,5 @@
 # ShopifyWebsite
-Fully functional and well-designed ASP.NET (VS) website for displaying products from suppliers with SQL Server Express.
+Fully functional and well-designed ASP.NET (VS) website for displaying products from suppliers with SQL Server Expresss.
 
 **Date:** 2nd June to 29th August 2018
 
